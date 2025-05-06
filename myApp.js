@@ -1,11 +1,6 @@
 const express = require('express');
 const helmet = require('helmet');
-app.use(helmet());
-app.use(helmet.hidePoweredBy(
-  {
-  setTo: 'PHP 4.2.0'
-}
-));
+app.use(helmet.hidePoweredBy())
 const app = express();
 
 
